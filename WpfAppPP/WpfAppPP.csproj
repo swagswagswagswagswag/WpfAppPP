@@ -64,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\CheckFields.cs" />
     <Compile Include="Classes\DataBase.cs" />
     <Compile Include="Classes\FrameClass.cs" />
     <Compile Include="LoginTab.cs">

@@ -29,5 +29,11 @@ namespace WpfAppPP.Pages
         {
 
         }
+
+        private void btnAuto_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.FrameClass.frmMain.Navigate(new AutorizatiomPage());
+        }
     }
 }
+
