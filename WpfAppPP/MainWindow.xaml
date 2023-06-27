@@ -9,7 +9,7 @@
     <Grid>
         <Frame Name="frmMain" NavigationUIVisibility="Hidden"/>
         <Grid.Background>
-            <ImageBrush ImageSource="image/back2.png"/>
+            <ImageBrush ImageSource="image/aaa.png"/>
         </Grid.Background>
     </Grid>
 </Window>

@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="227bf3056ed646969f8b67a3321ff997" Name="Diagram1">
         <EntityTypeShape EntityType="KochnevPPLogistickModel.LoginTab" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="KochnevPPLogistickModel.RecordOfInformation" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="KochnevPPLogistickModel.RecordOfInformation" Width="1.5" PointX="8.25" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="KochnevPPLogistickModel.UserTable" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <AssociationConnector Association="KochnevPPLogistickModel.FK_UserTable_LoginTab" ManuallyRouted="false" />
         <AssociationConnector Association="KochnevPPLogistickModel.FK_RecordOfInformation_UserTable" ManuallyRouted="false" />
