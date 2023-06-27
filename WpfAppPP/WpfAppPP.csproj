@@ -146,6 +146,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Resource Include="image\back.png" />
+    <Resource Include="image\back2.png" />
     <Content Include="ModelDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelDB.Context.cs</LastGenOutput>

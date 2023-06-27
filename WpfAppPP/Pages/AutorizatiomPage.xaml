@@ -15,16 +15,16 @@
                        HorizontalAlignment="Center" Text="Авторизация"/>
             <GroupBox Margin="0,10,0,0" FontFamily="Calibri" 
                       FontSize="20" Width="300" BorderBrush="#00693E" 
-                      BorderThickness="3" Foreground="#4D220E" Header="Логин">
+                      BorderThickness="2.5" Foreground="#4D220E" Header="Логин">
                 <TextBox Background="Azure" Padding="2" Margin="5" Name="tbLogin"/>
             </GroupBox>
             <GroupBox FontFamily="Calibri" FontSize="20" Margin="0,10,0,0" 
                       Width="300" BorderBrush="#00693E" 
-                      BorderThickness="3" Foreground="#4D220E" Header="Пароль">
+                      BorderThickness="2.5" Foreground="#4D220E" Header="Пароль">
                 <PasswordBox Background="Azure" Padding="2" Margin="5" PasswordChar="*" Name="pswPassword"/>
             </GroupBox>
-            <Button Background="Azure" Padding="5"  BorderBrush="#4D220E" BorderThickness="3" FontFamily="Calibri" FontSize="20" Margin="0,30,0,0" Name="btnAuto" Width="140" Content="Войти" Cursor="Hand"/>
-            <Button Background="Azure" Padding="5"  BorderBrush="#4D220E" BorderThickness="3" FontFamily="Calibri" FontSize="20" Margin="0,20,0,0" Name="btnReg" Width="160" Content="Регистрация" Cursor="Hand"/>
+            <Button Background="Azure" Padding="5"  BorderBrush="#00693E" BorderThickness="4" FontFamily="Calibri" FontSize="20" Margin="0,30,0,0" Name="btnAuto" Width="140" Content="Войти" Cursor="Hand"/>
+            <Button Background="Azure" Padding="5"  BorderBrush="#00693E" BorderThickness="4" FontFamily="Calibri" FontSize="20" Margin="0,20,0,0" Name="btnReg" Width="160" Content="Регистрация" Cursor="Hand"/>
         </StackPanel>
     </Grid>
 </Page>

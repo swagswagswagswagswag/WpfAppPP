@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfAppPP.Classes;
+using WpfAppPP.Pages;
+
 
 namespace WpfAppPP
 {
@@ -23,6 +26,9 @@ namespace WpfAppPP
         public MainWindow()
         {
             InitializeComponent();
+            DataBase.connect = new KochnevPPLogistickEntities();
+            FrameClass.frmMain = frmMain;
+            FrameClass.frmMain.Navigate(new AutorizatiomPage());
         }
     }
 }
