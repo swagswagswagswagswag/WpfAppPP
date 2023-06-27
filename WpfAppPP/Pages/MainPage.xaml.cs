@@ -20,10 +20,13 @@ namespace WpfAppPP.Pages
     /// </summary>
     public partial class MainPage : Page
     {
-        public MainPage()
+        LoginTab loginedTable;
+        public MainPage(LoginTab logined)
         {
             InitializeComponent();
+            loginedTable = logined;
         }
+
 
         private void btnPersonalAccount_Click(object sender, RoutedEventArgs e)
         {
