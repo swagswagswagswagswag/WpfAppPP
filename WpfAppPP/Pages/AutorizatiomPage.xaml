@@ -10,15 +10,21 @@
 
     <Grid>
         <StackPanel VerticalAlignment="Center">
-            <TextBlock FontFamily="Calibri" Foreground="#0B61A4" FontWeight="Bold" FontSize="26" HorizontalAlignment="Center" Text="Авторизация"/>
-            <GroupBox Margin="0,10,0,0" FontFamily="Calibri" FontSize="20" Width="300" BorderBrush="#0B61A4" BorderThickness="3" Header="Логин">
-                <TextBox Padding="2" Margin="5" Name="tbLogin"/>
+            <TextBlock FontFamily="Segoe Print" Foreground="#00693E" 
+                       FontWeight="Bold" FontSize="30" 
+                       HorizontalAlignment="Center" Text="Авторизация"/>
+            <GroupBox Margin="0,10,0,0" FontFamily="Calibri" 
+                      FontSize="20" Width="300" BorderBrush="#00693E" 
+                      BorderThickness="3" Foreground="#4D220E" Header="Логин">
+                <TextBox Background="Azure" Padding="2" Margin="5" Name="tbLogin"/>
             </GroupBox>
-            <GroupBox FontFamily="Calibri" FontSize="20" Width="300" BorderBrush="#0B61A4" BorderThickness="3" Header="Пароль">
-                <PasswordBox Padding="2" Margin="5" PasswordChar="*" Name="pswPassword"/>
+            <GroupBox FontFamily="Calibri" FontSize="20" Margin="0,10,0,0" 
+                      Width="300" BorderBrush="#00693E" 
+                      BorderThickness="3" Foreground="#4D220E" Header="Пароль">
+                <PasswordBox Background="Azure" Padding="2" Margin="5" PasswordChar="*" Name="pswPassword"/>
             </GroupBox>
-            <Button Background="White" Padding="5" BorderBrush="#0B61A4" BorderThickness="3" FontFamily="Calibri" FontSize="20" Margin="0,30,0,0" Name="btnAuto" Width="140" Content="Войти" Cursor="Hand"/>
-            <Button Background="White" Padding="5" BorderBrush="#0B61A4" BorderThickness="3" FontFamily="Calibri" FontSize="20" Margin="0,20,0,0" Name="btnReg" Width="160" Content="Регистрация" Cursor="Hand"/>
+            <Button Background="Azure" Padding="5"  BorderBrush="#4D220E" BorderThickness="3" FontFamily="Calibri" FontSize="20" Margin="0,30,0,0" Name="btnAuto" Width="140" Content="Войти" Cursor="Hand"/>
+            <Button Background="Azure" Padding="5"  BorderBrush="#4D220E" BorderThickness="3" FontFamily="Calibri" FontSize="20" Margin="0,20,0,0" Name="btnReg" Width="160" Content="Регистрация" Cursor="Hand"/>
         </StackPanel>
     </Grid>
 </Page>
