@@ -41,6 +41,7 @@ namespace WpfAppPP.Pages
                     if (logined != null)//если объект не нулевой то авторизация успешна
                     {
                         MessageBox.Show("Успешная авторизация", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                        Classes.FrameClass.frmMain.Navigate(new MainPage(logined));
                     }
                     else
                     {
