@@ -16,7 +16,7 @@
             <GroupBox Margin="0,10,0,0" FontFamily="Calibri" 
                       FontSize="20" Width="300" BorderBrush="#00693E" 
                       BorderThickness="3" Header="Фамилия">
-                <TextBox Padding="2" Background="Azure" Margin="5" Name="tSurname"/>
+                <TextBox Padding="2" Background="Azure" Margin="5" Name="tbSurname"/>
             </GroupBox>
             <GroupBox Margin="0,10,0,0" FontFamily="Calibri" 
                       FontSize="20" Width="300" BorderBrush="#00693E"

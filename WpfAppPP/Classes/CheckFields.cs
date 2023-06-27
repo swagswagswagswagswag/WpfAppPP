@@ -54,5 +54,34 @@ namespace WpfAppPP.Classes
             }
         }
 
+        /// <summary>
+        /// Проверка полей при авторизации
+        /// </summary>
+        /// <param name="login">Логин</param>
+        /// <param name="password">Пароль</param>
+        /// <returns></returns>
+        public static bool CheckAuthorization(string login, string password)
+        {
+            if (!string.IsNullOrWhiteSpace(login))
+            {
+                if (!string.IsNullOrWhiteSpace(password))
+                {
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("Заполните поле Пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Заполните поле Логин!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+        }
     }
+
+
 }
+
