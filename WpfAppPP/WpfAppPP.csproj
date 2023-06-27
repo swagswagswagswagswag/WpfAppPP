@@ -77,6 +77,9 @@
     <Compile Include="Pages\AutorizatiomPage.xaml.cs">
       <DependentUpon>AutorizatiomPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\RegistrationPage.xaml.cs">
+      <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RecordOfInformation.cs">
       <DependentUpon>ModelDB.tt</DependentUpon>
     </Compile>
@@ -96,6 +99,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\AutorizatiomPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RegistrationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

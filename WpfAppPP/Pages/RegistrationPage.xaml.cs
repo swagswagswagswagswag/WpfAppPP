@@ -16,23 +16,18 @@ using System.Windows.Shapes;
 namespace WpfAppPP.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AutorizatiomPage.xaml
+    /// Логика взаимодействия для RegistrationPage.xaml
     /// </summary>
-    public partial class AutorizatiomPage : Page
+    public partial class RegistrationPage : Page
     {
-        public AutorizatiomPage()
+        public RegistrationPage()
         {
             InitializeComponent();
         }
 
         private void btnReg_Click(object sender, RoutedEventArgs e)
         {
-            Classes.FrameClass.frmMain.Navigate(new RegistrationPage());
+
         }
-
-        private void btnAuto_Click(object sender, RoutedEventArgs e) 
-        {
-
-        }     
     }
 }
