@@ -16,7 +16,7 @@
             <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.ColumnSpan="2" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="0">
-            <TextBlock VerticalAlignment="Center" Margin="0,0,20,0" FontFamily="Calibri" Foreground="#0B61A4" FontWeight="Bold" FontSize="20" Name="tbName"/>
+            <TextBlock VerticalAlignment="Center" Margin="0,0,20,0" FontFamily="Calibri" Foreground="#50C878" FontWeight="Bold" FontSize="20" Name="tbName"/>
             <Button Click="btnExit_Click" Background="White" 
                     Padding="5" BorderBrush="#50C878" BorderThickness="3" 
                     Margin="0,0,30,0" FontFamily="Calibri" FontSize="20" 
@@ -32,7 +32,8 @@
                    Margin="0,0,20,0" FontFamily="Segoe Print" Foreground="#50C878" 
                    FontWeight="Bold" FontSize="26" Grid.Row="1" 
                    Text="Список работающих в отъезде"/>
-        <Button Click="btnAddBlog_Click" Grid.Row="3" Height="40" Background="White" Padding="5" 
+        <Button Click="btnAddBlog_Click" Grid.Row="3" Height="40" Background="White" 
+                Padding="5" 
                 BorderBrush="#50C878" BorderThickness="3" FontFamily="Calibri" 
                 FontSize="20" Name="btnAddBlog" Width="230" Content="Добавить запись" 
                 Cursor="Hand">
@@ -45,7 +46,18 @@
         <ListView Name="listBlogs" BorderBrush="#50C878" BorderThickness="3" Width="600" Grid.Row="2" HorizontalContentAlignment="Center" ScrollViewer.CanContentScroll="False">
             <ListView.ItemTemplate>
                 <DataTemplate>
-
+                    <StackPanel>
+                        <Border BorderBrush="#50C878" BorderThickness="2" CornerRadius="10">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="3*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Width="550" Margin="10,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" FontFamily="Calibri" FontSize="20" Grid.Row="0" Text="{Binding Entry}"/>
+                                <TextBlock Margin="0,0,10,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" HorizontalAlignment="Right" FontFamily="Calibri" FontSize="16" Grid.Row="1" Text="{Binding Date, StringFormat={}dd.MM.yyyy}"/>
+                            </Grid>
+                        </Border>
+                    </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

@@ -26,6 +26,17 @@ namespace WpfAppPP.Pages
             InitializeComponent();
             loginedTable = logined;
             tbName.Text = logined.UserTable.Surname + " " + logined.UserTable.Name;
+            List<RecordOfInformation> blogs = Classes.DataBase.connect.RecordOfInformation.Where(x => x.idUser == loginedTable.ID).OrderByDescending(x => x.Date).ToList();//запись в лист блогов записи пользователя
+            if (blogs.Count > 0)//если есть записи
+            {
+                listBlogs.ItemsSource = blogs;//помещение в лист записей
+            }
+            else
+            {
+                listBlogs.Visibility = Visibility.Collapsed;//скрываем лист
+                //tbEmptyBlog.Visibility = Visibility.Visible;//показываем сообщение
+            }
+
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)

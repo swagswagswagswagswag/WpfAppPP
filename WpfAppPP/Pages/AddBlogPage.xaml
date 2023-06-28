@@ -9,6 +9,39 @@
       Title="AddBlogPage">
 
     <Grid>
-        
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock FontFamily="Segoe Print" Foreground="#50C878" FontWeight="Bold" 
+                       FontSize="26" HorizontalAlignment="Center" 
+                       Text="Новая запись о работающем"/>
+            <TextBlock FontFamily="Times new roman" Foreground="#753313" 
+                       FontWeight="Bold" FontSize="20" 
+                       HorizontalAlignment="Center" Text="Добавьте запись"/>
+            <TextBox BorderBrush="#50C878" BorderThickness="3" Width="600" 
+                     TextWrapping="WrapWithOverflow" Height="200" 
+                         Padding="2" Margin="5" Name="tbText"/>
+            <StackPanel Margin="0,20,0,0" HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button Click="btnSave_Click" Background="White" Padding="5" BorderBrush="#50C878" 
+                        BorderThickness="3" FontFamily="Calibri" FontSize="20" 
+                        Margin="0,0,5,0" Name="btnSave" Width="160" 
+                        Content="Сохранить" Cursor="Hand">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Click="btnCancel_Click" Background="White" Padding="5" BorderBrush="#50C878" 
+                        BorderThickness="3" FontFamily="Calibri" FontSize="20" 
+                        Margin="5,0,0,0"  Name="btnCancel" Width="160" 
+                        Content="Отмена" Cursor="Hand">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </StackPanel>
     </Grid>
+
 </Page>
