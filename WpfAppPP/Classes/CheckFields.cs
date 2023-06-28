@@ -107,6 +107,117 @@ namespace WpfAppPP.Classes
                 return false;
             }
         }
+        /// <summary>
+        /// Проверка повтора пароля
+        /// </summary>
+        /// <param name="password">Новый пароль</param>
+        /// <param name="repeat">Старый пароль</param>
+        /// <returns>Пароли совпадают (true), пароли не совпадают (false)</returns>
+        public static bool CheckRepeatePassword(string password, string repeat)
+        {
+            if (password == repeat)
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Пароли не совпадают!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Проверка пароля в базе данных
+        /// </summary>
+        /// <param name="password">Пароль</param>
+        /// <param name="logined">Объект пользователя</param>
+        /// <returns>Пароль совпадает (true), пароль не совпадает (false)</returns>
+        public static bool CheckOldPassword(string password, LoginTab logined)
+        {
+            int passw = password.GetHashCode();//шифрование введенного пароля
+            if (passw == logined.Password)
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Неверно введенный старый пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Проверка полей для изменения данных пользователя
+        /// </summary>
+        /// <param name="surname">Фамилия</param>
+        /// <param name="name">Имя</param>
+        /// <param name="login">Логин</param>
+        /// <returns>Поля заполнены (true), поля не заполнены (false)</returns>
+        public static bool CheckUpdateUser(string surname, string name, string login)
+        {
+            if (!string.IsNullOrWhiteSpace(surname))
+            {
+                if (!string.IsNullOrWhiteSpace(name))
+                {
+                    if (!string.IsNullOrWhiteSpace(login))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Заполните поле Логин!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return false;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Заполните поле Имя!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Заполните поле Фамилия!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Проверка полей для смены пароля
+        /// </summary>
+        /// <param name="oldPassword">Старый пароль</param>
+        /// <param name="newPassword">Новый пароль</param>
+        /// <param name="repeatePassword">Повтор пароля</param>
+        /// <returns>Поля заполнены (true), поля не заполнены (false)</returns>
+        public static bool CheckUpdatePassword(string oldPassword, string newPassword, string repeatePassword)
+        {
+            if (!string.IsNullOrWhiteSpace(oldPassword))
+            {
+                if (!string.IsNullOrWhiteSpace(newPassword))
+                {
+                    if (!string.IsNullOrWhiteSpace(repeatePassword))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Повторите новый пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return false;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Введите новый пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Введите старый пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+        }
+
 
     }
 

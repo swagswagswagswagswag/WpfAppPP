@@ -25,11 +25,12 @@ namespace WpfAppPP.Pages
         {
             InitializeComponent();
             loginedTable = logined;
+            tbName.Text = logined.UserTable.Surname + " " + logined.UserTable.Name;
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
-
+            Classes.FrameClass.frmMain.Navigate(new AutorizatiomPage());
         }
     }
 }
