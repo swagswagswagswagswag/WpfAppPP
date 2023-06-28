@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppPP"
         mc:Ignorable="d"
-        Title="Modern Transport Logistics" Height="550" MinHeight="550" Width="800" MinWidth="800">
+        Title="Modern Transport Logistics" Height="550" MinHeight="550" Width="800" MinWidth="800"
+        Icon="image/logo.png">
     <Grid>
         <Frame Name="frmMain" NavigationUIVisibility="Hidden"/>
         <Grid.Background>
