@@ -32,7 +32,7 @@
                    Margin="0,0,20,0" FontFamily="Segoe Print" Foreground="#50C878" 
                    FontWeight="Bold" FontSize="26" Grid.Row="1" 
                    Text="Список работающих в отъезде"/>
-        <Button Grid.Row="3" Height="40" Background="White" Padding="5" 
+        <Button Click="btnAddBlog_Click" Grid.Row="3" Height="40" Background="White" Padding="5" 
                 BorderBrush="#50C878" BorderThickness="3" FontFamily="Calibri" 
                 FontSize="20" Name="btnAddBlog" Width="230" Content="Добавить запись" 
                 Cursor="Hand">

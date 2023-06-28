@@ -75,6 +75,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddBlogPage.xaml.cs">
+      <DependentUpon>AddBlogPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AutorizatiomPage.xaml.cs">
       <DependentUpon>AutorizatiomPage.xaml</DependentUpon>
     </Compile>
@@ -102,6 +105,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AddBlogPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AutorizatiomPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

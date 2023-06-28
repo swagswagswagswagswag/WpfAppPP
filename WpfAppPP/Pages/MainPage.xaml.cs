@@ -32,5 +32,10 @@ namespace WpfAppPP.Pages
         {
             Classes.FrameClass.frmMain.Navigate(new AutorizatiomPage());
         }
+
+        private void btnAddBlog_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.FrameClass.frmMain.Navigate(new AddBlogPage(loginedTable));//переход на страницу добавления записи блога
+        }
     }
 }
