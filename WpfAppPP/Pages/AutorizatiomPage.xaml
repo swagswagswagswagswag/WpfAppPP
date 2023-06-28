@@ -10,13 +10,13 @@
 
     <Grid>
         <StackPanel VerticalAlignment="Center">
-            <TextBlock FontFamily="Segoe Print" Foreground="#00693E" 
+            <TextBlock FontFamily="Segoe Print" Foreground="#50C878" 
                        FontWeight="Bold" FontSize="30" 
                        HorizontalAlignment="Center" Text="Авторизация"/>
             <TextBlock FontFamily="Times new roman" Foreground="#753313" 
                        FontWeight="Bold" FontSize="20" 
                        HorizontalAlignment="Center" Text="Логин"/>
-            <TextBox  Width="280" Height="30" BorderBrush="#00693E" 
+            <TextBox  Width="280" Height="30" BorderBrush="#50C878" 
                       BorderThickness="3" Background="White" 
                       Padding="2" Margin="5" Name="tbLogin">
                 <TextBox.Resources>
@@ -28,7 +28,7 @@
             <TextBlock FontFamily="Times new roman" Foreground="#753313" 
                        FontWeight="Bold" FontSize="20" 
                        HorizontalAlignment="Center" Text="Пароль"/>
-            <PasswordBox Width="280" Height="30" BorderBrush="#00693E" BorderThickness="3" 
+            <PasswordBox Width="280" Height="30" BorderBrush="#50C878" BorderThickness="3" 
                          Background="White" Padding="2" Margin="5" 
                          PasswordChar="*" x:Name="pswPassword">
                 <PasswordBox.Style>
@@ -71,7 +71,7 @@
                 </PasswordBox.Style>
             </PasswordBox>
             <Button Click="btnAuto_Click" Background="White" Padding="5"  
-                    BorderBrush="#00693E" BorderThickness="4" 
+                    BorderBrush="#50C878" BorderThickness="4" 
                     FontFamily="Times new roman" FontSize="20" 
                     Margin="0,30,0,0" Name="btnAuto" Width="140" 
                     Content="Войти" Cursor="Hand">
@@ -82,7 +82,7 @@
                 </Button.Resources>
             </Button>
             <Button Click="btnReg_Click" Background="White" Padding="5"  
-                    BorderBrush="#00693E" BorderThickness="4" FontFamily="Times new roman" 
+                    BorderBrush="#50C878" BorderThickness="4" FontFamily="Times new roman" 
                     FontSize="20" Margin="0,20,0,0" Name="btnReg" 
                     Width="160" Content="Регистрация" Cursor="Hand">
                 <Button.Resources>

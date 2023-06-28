@@ -17,11 +17,32 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.ColumnSpan="2" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="0">
             <TextBlock VerticalAlignment="Center" Margin="0,0,20,0" FontFamily="Calibri" Foreground="#0B61A4" FontWeight="Bold" FontSize="20" Name="tbName"/>
-            <Button Click="btnExit_Click" Background="White" Padding="5" BorderBrush="#00693E" BorderThickness="3" Margin="0,0,30,0" FontFamily="Calibri" FontSize="20" Name="btnExit" Width="140" Content="Выход" Cursor="Hand"/>
+            <Button Click="btnExit_Click" Background="White" 
+                    Padding="5" BorderBrush="#50C878" BorderThickness="3" 
+                    Margin="0,0,30,0" FontFamily="Calibri" FontSize="20" 
+                    Name="btnExit" Width="140" Content="Выход" Cursor="Hand">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </StackPanel>
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,20,0" FontFamily="Segoe Print" Foreground="#00693E" FontWeight="Bold" FontSize="20" Grid.Row="1" Text="Список работающих в отъезде"/>
-        <Button Grid.Row="3" Height="40" Background="White" Padding="5" BorderBrush="#00693E" BorderThickness="3" FontFamily="Calibri" FontSize="20" Name="btnAddBlog" Width="230" Content="Добавить запись" Cursor="Hand"/>
-        <ListView Name="listBlogs" BorderBrush="#00693E" BorderThickness="3" Width="600" Grid.Row="2" HorizontalContentAlignment="Center" ScrollViewer.CanContentScroll="False">
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" 
+                   Margin="0,0,20,0" FontFamily="Segoe Print" Foreground="#50C878" 
+                   FontWeight="Bold" FontSize="26" Grid.Row="1" 
+                   Text="Список работающих в отъезде"/>
+        <Button Grid.Row="3" Height="40" Background="White" Padding="5" 
+                BorderBrush="#50C878" BorderThickness="3" FontFamily="Calibri" 
+                FontSize="20" Name="btnAddBlog" Width="230" Content="Добавить запись" 
+                Cursor="Hand">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <ListView Name="listBlogs" BorderBrush="#50C878" BorderThickness="3" Width="600" Grid.Row="2" HorizontalContentAlignment="Center" ScrollViewer.CanContentScroll="False">
             <ListView.ItemTemplate>
                 <DataTemplate>
 
